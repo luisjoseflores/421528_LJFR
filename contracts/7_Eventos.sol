@@ -8,7 +8,6 @@ contract Eventos {
     //declarar un evento
     event CambioValorCantidad(address invocador, uint anteriorValor, uint256 nuevoValor);
 
-    //Probar con cuenta 5
     function cambiarCantidad(uint256 _cantidad) public {
         //emitir el evento
         emit CambioValorCantidad(msg.sender, cantidad, _cantidad);
